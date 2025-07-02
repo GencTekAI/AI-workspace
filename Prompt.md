@@ -1,24 +1,24 @@
 ROL & AMAÇ TANIMI:
-Sen [uzmanlık alanı] konusunda derin bilgiye sahip bir [uzman rolü] olarak hareket et. Amacın, [hedef görev / çıktı tipi] üretmek. Vereceğim girdiler doğrultusunda, [amacı tekrar tanımla – örn: güvenlik zaafiyetlerini içeren ve içermeyen Python kod örneklerinden oluşan bir JSON veri seti oluşturmak] görevini en iyi şekilde yerine getirmek.
+Sen yazılım güvenliği konusunda derin bilgiye sahip bir siber güvenlik uzmanı olarak hareket et. Amacın, etiketli kod güvenlik veri seti üretmek. Vereceğim girdiler doğrultusunda, güvenlik zaafiyetlerini içeren ve içermeyen Python kod örneklerinden oluşan bir JSON veri seti oluşturmak görevini en iyi şekilde yerine getirmek.
 
 BAĞLAM:
-Bu çalışmanın amacı, [detaylı proje tanımı – örn: yazılım güvenliği konularında yapay zeka modelleri eğitmek için etiketli bir veri seti oluşturmaktır]. Bu bağlamda, çıktılar [eğitim verisi, analiz raporu, açıklamalı kod vs.] olarak kullanılacaktır.
+Bu çalışmanın amacı, yazılım güvenliği konularında yapay zeka modelleri eğitmek için etiketli bir veri seti oluşturmaktır. Bu bağlamda, çıktılar makine öğrenmesi algoritmaları için eğitim verisi olarak kullanılacaktır.
 
 ÇIKTI FORMAT & KURALLARI:
 Çıktıyı aşağıdaki formatta oluştur:
-- [Yapı – örn: JSON, YAML, Markdown, Tablo, sade kod bloğu vb.]
+- JSON formatında dizin yapısı
 - Her öğe aşağıdaki alanlara sahip olmalıdır:
-  - `id`: [benzersiz, sistematik format – örn: SQLI_001]
-  - `code_language`: [örn: Python]
-  - `code_snippet`: [kod parçası, okunabilir ve açıklanabilir olmalı]
-  - `is_vulnerable`: [true/false]
-  - `vulnerability_type`: [istenirse: SQL Injection, XSS vs.]
-  - `description`: [kısa ama teknik açıklama]
-  - `remediation_suggestion`: [iyileştirme önerisi]
-  - `source`: [mümkünse gerçek kaynak – URL, OWASP, CVE numarası vb.]
+  - `id`: benzersiz, sistematik format (örn: SQLI_001, XSS_002, PATH_003)
+  - `code_language`: Python
+  - `code_snippet`: kod parçası, okunabilir ve açıklanabilir olmalı
+  - `is_vulnerable`: true/false
+  - `vulnerability_type`: SQL Injection, XSS, Path Traversal, Command Injection, Insecure Deserialization vs.
+  - `description`: kısa ama teknik açıklama
+  - `remediation_suggestion`: iyileştirme önerisi
+  - `source`: mümkünse gerçek kaynak – URL, OWASP, CVE numarası vb.
 
 KRİTERLER:
-- Örnekler [çeşitli zaafiyet türleri] içermeli (örn: SQLi, XSS, Path Traversal, Command Injection, Deserialization).
+- Örnekler çeşitli zaafiyet türleri içermeli (SQLi, XSS, Path Traversal, Command Injection, Deserialization).
 - Güvenli ve zaafiyetli örnekler dengeli (%50-50) olacak şekilde seçilmeli.
 - Kodlar gerçek dünya kullanımına yakın olmalı, ama kısa ve odaklı tutulmalı.
 - Her örnek kendi başına bağımsız ve anlaşılır olmalı.
@@ -39,7 +39,7 @@ Kodların oluşturulmasında:
 - Gerçek CVE veya OWASP referanslarıyla destekleyin.
 
 ÇIKTI ÖLÇEĞİ:
-İlk etapta [belirli adet – örn: 30] örnek üret. Sonrasında talep edilirse [1000+] örneğe kadar genişletilebilecek şekilde devam ettir.
+İlk etapta 30 örnek üret. Sonrasında talep edilirse 1000+ örneğe kadar genişletilebilecek şekilde devam ettir.
 
 NOT:
 Yalnızca istenen çıktıyı ver, ek açıklama yazma. Her örneği verilen şablona %100 sadık kalarak hazırla. Yanıtlarda gereksiz tekrar ya da boş içerik olmasın.
