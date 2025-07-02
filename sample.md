@@ -1,0 +1,1 @@
+“Yukarıdaki şablona göre, Python dilinde SQL Injection, XSS, ve Path Traversal zaafiyetlerine dair 10 güvenli, 10 zaafiyetli örnek üret.”
