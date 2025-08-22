@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gençtek AI - Yapay Zeka ile Güvenlik Zaafiyeti Tespiti</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-shield-alt"></i>
+                <span>Gençtek AI</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Ana Sayfa</a></li>
+                <li><a href="#about" class="nav-link">Hakkında</a></li>
+                <li><a href="#how-it-works" class="nav-link">Nasıl Çalışır</a></li>
+                <li><a href="#architecture" class="nav-link">Mimari</a></li>
+                <li><a href="#benefits" class="nav-link">Faydalar</a></li>
+                <li><a href="#demo" class="nav-link">Demo</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Yapay Zeka</span> ile<br>
+                    Güvenlik Zaafiyeti Tespiti
+                </h1>
+                <p class="hero-description">
+                    Yazılım kodlarındaki güvenlik zaafiyetlerini otomatik olarak tespit eden 
+                    gelişmiş yapay zeka teknolojisi ile yazılım geliştirme süreçlerinizi daha güvenli hale getirin.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn btn-primary">Keşfet</a>
+                    <a href="#demo" class="btn btn-secondary">Demo İzle</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-animation">
+                    <div class="code-line safe">
+                        <span class="line-number">1</span>
+                        <span class="code-text">cursor.execute("SELECT * FROM users WHERE id = %s", (user_id,))</span>
+                        <span class="status-indicator safe"><i class="fas fa-check"></i></span>
+                    </div>
+                    <div class="code-line vulnerable">
+                        <span class="line-number">2</span>
+                        <span class="code-text">query = "SELECT * FROM users WHERE id = " + user_id</span>
+                        <span class="status-indicator vulnerable"><i class="fas fa-exclamation-triangle"></i></span>
+                    </div>
+                    <div class="code-line safe">
+                        <span class="line-number">3</span>
+                        <span class="code-text">return render_template("page.html", data=escape(user_input))</span>
+                        <span class="status-indicator safe"><i class="fas fa-check"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Proje Amacı</h2>
+                <p>Gençtek AI olarak geliştirdiğimiz çığır açan teknoloji</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Gençtek AI olarak, yazılım kodlarındaki <strong>güvenlik zaafiyetlerini otomatik olarak tespit edebilen bir yapay zeka (YZ) modeli</strong> geliştirmeyi hedefliyoruz. 
+                    </p>
+                    <p>
+                        Geleneksel güvenlik denetimi yöntemleri genellikle zaman alıcı ve insan hatasına açık olabilirken, geliştireceğimiz bu yapay zeka, potansiyel güvenlik açıklarını daha hızlı ve verimli bir şekilde belirleyerek yazılım geliştirme süreçlerini daha güvenli hale getirecektir.
+                    </p>
+                    <div class="feature-grid">
+                        <div class="feature-item">
+                            <i class="fas fa-bolt"></i>
+                            <h3>Hızlı Tespit</h3>
+                            <p>Manuel incelemeye göre çok daha hızlı güvenlik açığı tespiti</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-eye"></i>
+                            <h3>Erken Teşhis</h3>
+                            <p>Geliştirme sürecinin erken aşamalarında zaafiyetleri bulma</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-chart-line"></i>
+                            <h3>Ölçeklenebilir</h3>
+                            <p>Büyük kod tabanlarını kolayca tarayabilme</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nasıl Çalışır?</h2>
+                <p>Yapay zeka modelimizin çalışma prensibi</p>
+            </div>
+            <div class="work-process">
+                <div class="process-step">
+                    <div class="step-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Veri Analizi</h3>
+                    <p>Binlerce kod örneğini analiz ederek güvenlik kalıplarını öğrenir</p>
+                </div>
+                <div class="process-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Makine Öğrenimi</h3>
+                    <p>Güvenli ve zaafiyetli kod kalıplarını öğrenir ve sınıflandırır</p>
+                </div>
+                <div class="process-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Tespit</h3>
+                    <p>Yeni kod parçacıklarında güvenlik açıklarını otomatik olarak tespit eder</p>
+                </div>
+            </div>
+            <div class="analogy-section">
+                <div class="analogy-content">
+                    <i class="fas fa-user-md"></i>
+                    <div class="analogy-text">
+                        <p>
+                            <strong>Bu süreç, bir doktorun hastalıkları teşhis etmesi gibidir:</strong> 
+                            Doktor (YZ modeli) binlerce hasta vakasını (kod örneğini) inceleyerek hastalık semptomlarını (zaafiyet kalıplarını) öğrenir ve ardından yeni bir hastanın semptomlarına bakarak hastalığı teşhis eder.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Section -->
+    <section id="architecture" class="architecture">
+        <div class="container">
+            <div class="section-header">
+                <h2>Proje Mimarisi</h2>
+                <p>Sistemin ana bileşenleri ve çalışma adımları</p>
+            </div>
+            <div class="architecture-steps">
+                <div class="arch-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Veri Seti Toplama ve Hazırlığı</h3>
+                        <ul>
+                            <li><strong>Açık Kaynak Güvenlik Veritabanları:</strong> CVE, OWASP Top 10, Exploit-DB</li>
+                            <li><strong>Açık Kaynak Projeler:</strong> GitHub/GitLab güvenlik yamaları</li>
+                            <li><strong>Sentetik Veri:</strong> Kontrolü zaafiyet örnekleri</li>
+                        </ul>
+                        <div class="data-labels">
+                            <span class="label safe">0: Güvenli Kod</span>
+                            <span class="label vulnerable">1: Zaafiyetli Kod</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="arch-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Model Eğitimi</h3>
+                        <ul>
+                            <li><strong>Model Seçimi:</strong> LSTM, Transformer tabanlı modeller (CodeBERT)</li>
+                            <li><strong>Eğitim Süreci:</strong> Eğitim ve test seti ayrımı</li>
+                            <li><strong>Optimizasyon:</strong> Hata minimizasyonu ve parametre ayarı</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="arch-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Model Değerlendirme</h3>
+                        <div class="metrics-grid">
+                            <div class="metric">
+                                <i class="fas fa-bullseye"></i>
+                                <span>Doğruluk</span>
+                            </div>
+                            <div class="metric">
+                                <i class="fas fa-crosshairs"></i>
+                                <span>Hassasiyet</span>
+                            </div>
+                            <div class="metric">
+                                <i class="fas fa-radar"></i>
+                                <span>Duyarlılık</span>
+                            </div>
+                            <div class="metric">
+                                <i class="fas fa-chart-bar"></i>
+                                <span>F1-Skor</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="arch-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Dağıtım ve Kullanım</h3>
+                        <ul>
+                            <li><strong>CI/CD Entegrasyonu:</strong> Sürekli entegrasyon boru hatları</li>
+                            <li><strong>IDE Entegrasyonu:</strong> Geliştirme ortamlarına entegrasyon</li>
+                            <li><strong>API Geliştirme:</strong> RESTful API arayüzü</li>
+                            <li><strong>Gerçek Zamanlı Analiz:</strong> Anında geri bildirim</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2>Projenin Sağladığı Faydalar</h2>
+                <p>Gençtek AI ile elde edeceğiniz avantajlar</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Hız ve Verimlilik</h3>
+                    <p>Güvenlik açıklarını manuel incelemelere göre çok daha hızlı tespit edebilir.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Maliyet Azaltma</h3>
+                    <p>Güvenlik denetimi süreçlerinin maliyetini önemli ölçüde düşürebilir.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Erken Teşhis</h3>
+                    <p>Geliştirme sürecinin erken aşamalarında zaafiyetleri bularak, ürün piyasaya sürülmeden önce giderilmesini sağlar.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Tutarlılık</h3>
+                    <p>İnsan incelemesindeki öznel farklılıkların aksine, tespitlerde daha tutarlı bir yaklaşım sunar.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+                    <h3>Ölçeklenebilirlik</h3>
+                    <p>Büyük kod tabanlarını kolayca tarayabilir ve analiz edebilir.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Güvenlik Artışı</h3>
+                    <p>Yazılım geliştirme süreçlerini daha güvenli hale getirerek siber tehditleri minimize eder.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="demo">
+        <div class="container">
+            <div class="section-header">
+                <h2>Demo: Canlı Kod Analizi</h2>
+                <p>Sistemimizin nasıl çalıştığını görün</p>
+            </div>
+            <div class="demo-container">
+                <div class="demo-tabs">
+                    <button class="demo-tab active" data-tab="sql">SQL Injection</button>
+                    <button class="demo-tab" data-tab="xss">XSS</button>
+                    <button class="demo-tab" data-tab="cmd">Command Injection</button>
+                </div>
+                <div class="demo-content">
+                    <div class="demo-panel active" id="sql-demo">
+                        <div class="code-examples">
+                            <div class="code-example vulnerable">
+                                <h4><i class="fas fa-exclamation-triangle"></i> Zaafiyetli Kod</h4>
+                                <pre><code>username = request.args.get('username')
+query = "SELECT * FROM users WHERE username = '%s'" % username
+cursor.execute(query)</code></pre>
+                                <div class="analysis">
+                                    <span class="vulnerability-type">SQL Injection</span>
+                                    <p>Kullanıcı girdisi SQL sorgusuna doğrudan eklenmiş. Bu, SQL injection saldırılarına açıktır.</p>
+                                </div>
+                            </div>
+                            <div class="code-example safe">
+                                <h4><i class="fas fa-check"></i> Güvenli Kod</h4>
+                                <pre><code>username = request.args.get('username')
+cursor.execute("SELECT * FROM users WHERE username = %s", (username,))</code></pre>
+                                <div class="analysis">
+                                    <span class="safe-type">Güvenli</span>
+                                    <p>Parametreli sorgu kullanılarak SQL Injection önlenmiş.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="demo-panel" id="xss-demo">
+                        <div class="code-examples">
+                            <div class="code-example vulnerable">
+                                <h4><i class="fas fa-exclamation-triangle"></i> Zaafiyetli Kod</h4>
+                                <pre><code>@app.route("/search")
+def search():
+    q = request.args.get("q")
+    return f"&lt;h1&gt;{q}&lt;/h1&gt;"</code></pre>
+                                <div class="analysis">
+                                    <span class="vulnerability-type">Cross-Site Scripting (XSS)</span>
+                                    <p>Kullanıcı girdisi HTML çıktısına doğrudan eklenmiş. XSS saldırılarına açıktır.</p>
+                                </div>
+                            </div>
+                            <div class="code-example safe">
+                                <h4><i class="fas fa-check"></i> Güvenli Kod</h4>
+                                <pre><code>@app.route("/search")
+def search():
+    q = request.args.get("q")
+    return render_template("results.html", query=q)</code></pre>
+                                <div class="analysis">
+                                    <span class="safe-type">Güvenli</span>
+                                    <p>Jinja2 template otomatik HTML escape özelliği sayesinde güvenlidir.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="demo-panel" id="cmd-demo">
+                        <div class="code-examples">
+                            <div class="code-example vulnerable">
+                                <h4><i class="fas fa-exclamation-triangle"></i> Zaafiyetli Kod</h4>
+                                <pre><code>import os
+command = request.args.get('cmd')
+os.system(command)</code></pre>
+                                <div class="analysis">
+                                    <span class="vulnerability-type">Command Injection</span>
+                                    <p>Kullanıcı girdisi kabuk komutuna doğrudan aktarılmış. Sistem komutları çalıştırılabilir.</p>
+                                </div>
+                            </div>
+                            <div class="code-example safe">
+                                <h4><i class="fas fa-check"></i> Güvenli Kod</h4>
+                                <pre><code>import subprocess
+command = ["ls", "-la"]
+result = subprocess.run(command, capture_output=True, text=True)</code></pre>
+                                <div class="analysis">
+                                    <span class="safe-type">Güvenli</span>
+                                    <p>Komutlar liste şeklinde verilmiş, shell=True kullanılmamış.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section class="technologies">
+        <div class="container">
+            <div class="section-header">
+                <h2>Kullanılan Teknolojiler</h2>
+                <p>Projemizde kullandığımız modern teknolojiler</p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-database"></i>
+                    <span>Pandas & NumPy</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-brain"></i>
+                    <span>TensorFlow / PyTorch</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-language"></i>
+                    <span>NLTK & SpaCy</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-robot"></i>
+                    <span>Hugging Face</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-code"></i>
+                    <span>CodeBERT</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Gençtek AI</span>
+                    </div>
+                    <p>Yapay zeka ile güvenlik zaafiyeti tespitinde lider teknoloji.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Proje</h3>
+                    <ul>
+                        <li><a href="#about">Hakkında</a></li>
+                        <li><a href="#how-it-works">Nasıl Çalışır</a></li>
+                        <li><a href="#architecture">Mimari</a></li>
+                        <li><a href="#benefits">Faydalar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Kaynaklar</h3>
+                    <ul>
+                        <li><a href="https://owasp.org" target="_blank">OWASP</a></li>
+                        <li><a href="https://cve.mitre.org" target="_blank">CVE</a></li>
+                        <li><a href="https://www.exploit-db.com" target="_blank">Exploit-DB</a></li>
+                        <li><a href="#demo">Demo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>İletişim</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@genctekai.com</li>
+                        <li><i class="fab fa-github"></i> GitHub</li>
+                        <li><i class="fab fa-linkedin"></i> LinkedIn</li>
+                        <li><i class="fab fa-twitter"></i> Twitter</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Gençtek AI. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
